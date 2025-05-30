@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <title>Erosestudio</title>
+</head>
+<body>
+    <nav class="navbar">
+  <div class="nav-container">
+    <!-- Logo -->
+    <div class="nav-logo">
+      <img src="img/page_logo_4dbd6ff0b3f6ed07.png" alt="Barbería Logo">
+      <span>Erosestudio</span>
+    </div>
+    
+    <!-- Menu de navegación -->
+    <ul class="nav-menu">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="https://api.whatsapp.com/send/?phone=56934245912&text&type=phone_number&app_absent=0">Contactanos</a></li>
+      <li><a href="https://www.instagram.com/erosestudio.cl/">Instagram</a></li>
+    </ul>
+    
+    <!-- Botón de reserva -->
+    <a href="https://erosestudio.site.agendapro.com/cl/sucursal/314665" class="reserva-btn">RESERVA TU HORA</a>
+    
+    <!-- Hamburger menu para móvil -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>¿Ya agendaste tu hora?</h1>
+            <button onclick="abrirAgenda()">Agenda aquí</button>
+        </div>
+        
+        <!-- Opcional: puntos indicadores -->
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+    <section class="features" id="features">
+  <div class="feature-container">
+    <i class="fa-solid fa-calendar-check"></i>
+    <h2>Agendamiento fácil</h2>
+    <p>Agenda tu hora de forma rápida y sencilla.</p>
+  </div>
+
+  <div class="feature-container">
+    <i class="fa-solid fa-bell"></i>
+    <h2>Recordatorios</h2>
+    <p>Recibe recordatorios para no olvidar tu cita.</p>
+  </div>
+
+  <div class="feature-container">
+    <i class="fa-solid fa-headset"></i>
+    <h2>Soporte 24/7</h2>
+    <p>Estamos aquí para ayudarte en cualquier momento.</p>
+  </div>
+</section>
+
+    <section class="servicios" id="servicios">
+  <h2>Nuestros Servicios</h2>
+  
+  <div class="servicios-grid">
+    <div class="servicio-card">
+      <img src="img/cortepelo.jpg" alt="Corte de cabello">
+      <h3>Corte Varón</h3>
+      <p>Ya sea que busques un look conservador y elegante o algo más audaz y contemporáneo, nos aseguramos de que salgas de nuestra barbería sintiéndote y luciendo mejor que nunca. Nos tomamos el tiempo para conocer tus preferencias y entender tus necesidades, asegurando que cada corte sea una experiencia relajante y enriquecedora.</p>
+      <p class="precio">$12.000</p>
+      <button class="reservar-btn">RESERVAR HORA</button>
+    </div>
+
+    <div class="servicio-card">
+      <img src="img/corteniño.jpg" alt="Corte Niños">
+      <h3>Corte Niños</h3>
+      <p>Entendemos que para muchos niños, una visita al barbero puede ser una experiencia nueva y un poco intimidante. Nuestro equipo de barberos experimentados y pacientes se esfuerza por crear un ambiente relajado y acogedor, usando técnicas que minimizan el ruido y el malestar, para que tanto niños como padres se sientan a gusto.</p>
+      <p class="precio">$12.000</p>
+      <button class="reservar-btn" onclick="abrirAgenda()"> RESERVAR HORA</button>
+    </div>
+
+    <div class="servicio-card">
+      <img src="img/barba.jpg" alt="Perfilado y limpieza de barba">
+      <h3>Barba</h3>
+      <p>Nuestro equipo de barberos especializados ofrece una gama completa de servicios para la barba, desde recortes y delineados meticulosos hasta tratamientos de acondicionamiento de lujo. Utilizamos productos de alta calidad especialmente diseñados para el cuidado de la barba, asegurando que tu vello facial no solo luzca bien, sino también saludable.</p>
+      <p class="precio">$8.000</p>
+      <button class="reservar-btn"onclick="abrirAgenda()">RESERVAR HORA</button>
+    </div>
+
+    <div class="servicio-card">
+      <img src="img/cortebarba.jpg" alt="Corte de pelo + barba">
+      <h3>Corte de pelo + barba</h3>
+      <p>Nuestros barberos altamente capacitados y carismáticos están versados en las técnicas más avanzadas para asegurar que tu corte de pelo y tu barba se complementen perfectamente. Comenzamos con una consulta personalizada para entender tus preferencias y necesidades, seguida de un corte de pelo meticuloso que defina tu estilo.</p>
+      <p class="precio">$17.000</p>
+      <button class="reservar-btn"onclick= "abrirAgenda()">RESERVAR HORA</button>
+    </div>
+  </div>
+</section>
+
+<div class="map-container">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.9976655335577!2d-70.6444137032872!3d-33.44936735113726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5d618acb9dd%3A0xd50fa3884292c90e!2sBarber%C3%ADa%20Eros%20estudio!5e0!3m2!1ses-419!2scl!4v1748589694878!5m2!1ses-419!2scl" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+
+
+<footer class="footer">
+  <p>© 2025 Techsclk.</p>
+  <p>Todos los derechos reservados. Powered by Sclk.</p>
+</footer>
+
+
+    </section>
+    <script src="js/scrip.js"></script>
+    <script src="js/agenda.js"></script>
+    <script src="js/HAMBUR.JS"></script>
+</body>
+</html>
