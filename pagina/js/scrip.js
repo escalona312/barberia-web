@@ -1,8 +1,8 @@
 // Array con tus imágenes
 const images = [
-    'img/lista1.jpg',
-    'img/lista2.jpg', 
-    'img/lista3.jpg'
+    'pagina/img/lista1.jpg',
+    'pagina/img/lista2.jpg', 
+    'pagina/img/lista3.jpg'
 ];
 
 let currentIndex = 0;
